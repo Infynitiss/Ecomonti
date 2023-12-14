@@ -1,0 +1,77 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #EEF4F9;
+    color: #12291B;
+}
+
+/* Header styles */
+#website-header {
+    background-color: #FFFFFF;
+    color: #000000;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#website-header a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/* Main body styles */
+#main-body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Logo styles */
+#main-body .heading-small {
+    font-size: 25.38px;
+    line-height: 1.2;
+    font-weight: var(--header-logo-fontWeight);
+    font-family: var(--header-logo-fontFamily);
+}
+
+/* Navigation styles */
+#main-body ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+#main-body li {
+    border-bottom: 2px solid transparent;
+}
+
+#main-body a {
+    color: currentColor;
+    text-decoration: none;
+    padding: 1.5px;
+}
+
+/* Mobile styles */
+#main-body button {
+    color: #000000;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Section styles */
+#main-body .min-h-150 {
+    min-height: 150px;
+}
+
+/* Footer styles */
+#main-body .Toastify {
+    /* Add styles for Toastify or adjust as needed */
+}
