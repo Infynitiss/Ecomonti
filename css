@@ -1,0 +1,42 @@
+/* Загальні стилі для веб-сайту */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Заголовок сторінки */
+h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    color: #333; /* Колір тексту */
+}
+
+/* Загальні стилі для параграфів */
+p {
+    line-height: 1.6; /* Міжрядковий інтервал */
+    color: #666; /* Колір тексту */
+}
+
+/* Стилі для метатегів Open Graph (og) */
+meta[property="og:title"],
+meta[property="og:description"],
+meta[property="og:image"] {
+    /* Ваші стилі тут */
+}
+
+/* Стилі для посилань */
+a {
+    color: #007bff; /* Колір посилань */
+    text-decoration: none; /* Заборона підчеркування у посилань */
+}
+
+a:hover {
+    text-decoration: underline; /* Підчеркування при наведенні на посилання */
+}
+
+/* Стилі для зображення фавікону */
+link[rel="icon"] {
+    /* Ваші стилі тут */
+}
