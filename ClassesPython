@@ -1,0 +1,53 @@
+from datetime import datetime
+
+class Parameter:
+    def init(self, name, value):
+        self.name = name
+        self.value = value
+
+    def get_name(self):
+        return self.name
+
+    def get_value(self):
+        return self.value
+
+class EnvironmentalInformation:
+    def init(self, date, time):
+        self.date = date
+        self.time = time
+        self.parameters = []
+
+    def get_date(self):
+        return self.date
+
+    def get_time(self):
+        return self.time
+
+    def get_parameters(self):
+        return self.parameters
+
+class System:
+    def init(self):
+        self.environmental_data = []
+        self.sensors = []
+        self.sensors = []
+    
+    def store_environmental_data(self, environmental_data):
+        self.environmental_data.append(environmental_data)
+
+    def create_environmental_reports(self, environmental_data):
+        # Логіка для створення звітів про стан довкілля
+        pass
+
+# Приклад використання класів:
+environmental_system = System()
+
+parameter_1 = Parameter("Temperature", 25.5)
+parameter_2 = Parameter("Humidity", 60)
+
+environment_info = EnvironmentalInformation(datetime.now().date(), datetime.now().time())
+environment_info.parameters.extend([parameter_1, parameter_2])
+
+environmental_system.store_environmental_data(environment_info)
+
+# Додайте інші дані про стан довкілля та викликайте методи, які потрібно
