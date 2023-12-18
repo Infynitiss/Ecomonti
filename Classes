@@ -1,0 +1,60 @@
+class Parameter:
+    def init(self, name, value):
+        self.name = name
+        self.value = value
+
+class EnvironmentalInformation:
+    def init(self, location, date):
+        self.location = location
+        self.date = date
+        self.parameters = []
+
+    def add_parameter(self, parameter):
+        self.parameters.append(parameter)
+
+# Приклад використання класів:
+temperature = Parameter("Temperature", 25.5)
+humidity = Parameter("Humidity", 60)
+
+environment_info = EnvironmentalInformation("City Park", "2023-01-01")
+environment_info.add_parameter(temperature)
+environment_info.add_parameter(humidity)
+
+print(f"Location: {environment_info.location}")
+print(f"Date: {environment_info.date}")
+print("Parameters:")
+for parameter in environment_info.parameters:
+    print(f"{parameter.name}: {parameter.value}")
+
+class System:
+    def init(self, name):
+        self.name = name
+        self.environmental_info_list = []
+
+    def add_environmental_info(self, environmental_info):
+        self.environmental_info_list.append(environmental_info)
+
+    def display_environmental_info(self):
+        print(f"Environmental Information for {self.name} System:")
+        for info in self.environmental_info_list:
+            print(f"\nLocation: {info.location}")
+            print(f"Date: {info.date}")
+            print("Parameters:")
+            for parameter in info.parameters:
+                print(f"{parameter.name}: {parameter.value}")
+
+# Приклад використання класу "Система":
+environmental_system = System("Ecological Monitoring System")
+
+environment_info_1 = EnvironmentalInformation("City Park", "2023-01-01")
+environment_info_1.add_parameter(temperature)
+environment_info_1.add_parameter(humidity)
+
+environment_info_2 = EnvironmentalInformation("Lake Area", "2023-01-02")
+environment_info_2.add_parameter(Parameter("Water Quality", "Good"))
+environment_info_2.add_parameter(Parameter("Noise Level", 40))
+
+environmental_system.add_environmental_info(environment_info_1)
+environmental_system.add_environmental_info(environment_info_2)
+
+environmental_system.display_environmental_info()
