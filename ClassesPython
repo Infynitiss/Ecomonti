@@ -50,4 +50,4 @@ environment_info.parameters.extend([parameter_1, parameter_2])
 
 environmental_system.store_environmental_data(environment_info)
 
-# Додайте інші дані про стан довкілля та викликайте методи, які потрібно
+
